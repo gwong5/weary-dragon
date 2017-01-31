@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Number Guess Game
+  input(type="text" id="guessInput" placeholder="Pick between 1 and 100" onchange="guessNumber(this)")
+  input(type="submit")
+  p(id="guesses") Guesses so far: 0
+  .spacer
+  h1 Scrabble Bag
