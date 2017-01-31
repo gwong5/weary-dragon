@@ -270,13 +270,13 @@ Your challenge is to resolve a given path name into its actual location given a 
 3
 /bin:/usr/bin
 /usr/bin:/usr/local/bin/
-/usr/local/bin/log:/var/log-2017
+/usr/local/bin/log:/const/log-2017
 /bin/log/lib
 ```
 
 **Another Example Output:**
 ```
-/var/log-2017/lib
+/const/log-2017/lib
 ```
 
 ---
