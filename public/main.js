@@ -4,10 +4,9 @@ let counter = 0
 
 const guessNumber = (input) => {
   let inputValue = input.value
+  console.log(randomNumber);
   if (isNaN(inputValue) || inputValue < 1 || inputValue > 100) alert('Must be a number between 1 and 100')
-  if (inputValue === randomNumber) {
-    alert('You Win!')
-  }
+  if (inputValue == randomNumber) alert('You Win!')
   if (inputValue > randomNumber && inputValue <= 100) {
     alert('Guess Lower')
     counter++
