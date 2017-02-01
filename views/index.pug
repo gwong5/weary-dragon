@@ -2,8 +2,8 @@ extends layout
 
 block content
   h1 Number Guess Game
-  input(type="number" id="guessInput" placeholder="Number 1 - 100" onchange="guessNumber(this)")
-  input(type="submit")
+  input(type="number" id="guessInput" placeholder="Number 1 - 100")
+  input(type="submit" onclick="guessNumber(this)")
   p(id="guesses") Guesses so far: 0
   .spacer
   h1 Scrabble Bag
@@ -12,8 +12,12 @@ block content
   .spacer
   h1 String Indices
   span
-    input(type="text" id="strinDex" placeholder="Enter a sentence" onchange="fn(this)")
+    input(type="text" id="sentence" placeholder="Enter a sentence")
     span Choose Index:
     input(type="number" id="indexNumber")
     input(type="submit" onclick="findIndex()")
     p(id="theWord") Bird is The Word
+  .spacer
+  h1 Fibonacci Bases
+  input(type="text" onchange="fibonacci()")
+  input(type="submit")
