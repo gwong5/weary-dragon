@@ -19,7 +19,7 @@ const guessNumber = (input) => {
     document.getElementById("guesses").innerHTML = "Guesses so far: " + counter
 }
 
-let sentence = undefined
+let sentence
 
 fn = (input) => {
   return sentence = input.value
@@ -28,6 +28,11 @@ fn = (input) => {
 const findIndex = () => {
   let splits = sentence.split(/\s*\b\s*/)
   let indexElement = document.getElementById("indexNumber").value - 1
-  let theWord = splits[indexElement]
-  document.getElementById("theWord").innerHTML = theWord + " is The Word"
+  let indexWord
+  if (indexElement < 0 || indexElement > splits.length) {
+    indexWord = '_'
+  } else {
+    indexWord = splits[indexElement]
+  }
+  document.getElementById("theWord").innerHTML = indexWord + " is The Word"
 }
