@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 Number Guess Game
+  input(type="number" id="guessInput" placeholder="Number 1 - 100")
+  button(onclick="guessNumber(this)") Guess
+  p(id="guesses") Guesses so far: 0
+  .spacer
+  h1 String Indices
+  input(type="text" id="sentence" placeholder="Enter a sentence")
+  input(type="number" placeholder="Choose Index" id="indexNumber")
+  button(onclick="findIndex()") Find Index
+  p(id="theWord") Bird is The Word
+  .spacer
+  h1 Fibonacci Bases
+  input(type="number" id="fibonacciDecrypt" placeholder="Only 1's and 0's")
+  button(onclick="fibonacciDecrypt()") Decrypt
+  .spacer
+  h1 The Disemvoweling
+  input(type="text" placeholder="Enter Text to be disemvoweled" id="removeVowels")
+  button(onclick="disemvowel()") Disemvowel
+  p(id="disemvoweled")
+  .spacer
+  h1 Parens-B-Gone
+  input(id="removeParenthesis" placeholder="Removes Extra Parenthesis")
+  button(onclick="removeParenthesis") Remove Parenthesis
